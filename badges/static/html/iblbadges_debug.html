@@ -1,0 +1,41 @@
+<div class="iblbadges_block">
+<p>IBLBadges:<br>
+ Anon User ID: <b>{self.n_user_id}</b><br>
+ Real User ID : <b>{self.claim_db_user_id}</b><br>
+ User Name : <b>{self.claim_db_user_name}</b><br>
+ User Email : <b>{self.claim_db_user_email}</b><br>
+ Course ID : <b>{self.claim_db_user_course}</b><br>
+ Requesting  badge <b>{self.bg_id}</b><br>
+ Badge provider <b>{self.bg_provider}</b><br>
+ Required Score <b>{self.required_score}</b><br>
+ User Score <b>{self.user_score}</b><br>
+ Text Desc. <b>{self.form_text}</b><br>
+ Text Congrat.<b>{self.congratulations_text}</b><br>
+ Text Not-enough<b>{self.enough_text}</b><br>
+ <hr>
+ Getting Course Data Tree:<br>
+ {self.course_data_tree}<br>
+ <hr>
+ Problems : modules for average:<br>
+ {self.claim_db_problems_lists}
+ <br>
+ Partial user_problems_score:<b>{self.claim_db_problems_partial_score}</b><br>
+ Average from total_score:<b>{self.claim_db_problems_total_score}</b><br>
+ Percent user_problems_score:<b>{self.claim_db_problems_percent_score}</b><br>
+ <hr>
+
+<br>Conecting to badgeprovider ...<br>
+<p>
+Auth token : <b>{self.claim_prov_access_token}</b><br>
+</p>
+<hr>
+<p>
+
+<div id="frmBadgeShowForm">
+{self.claim_badge_form}
+</div>
+
+<div id="resForm" style="display:none"></div>
+
+</p>
+</div>

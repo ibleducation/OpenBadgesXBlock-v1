@@ -1,0 +1,9 @@
+/* CSS for Badges */
+
+.badges_block .count {
+    font-weight: bold;
+}
+
+.badges_block p {
+    cursor: pointer;
+}

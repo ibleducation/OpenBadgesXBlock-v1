@@ -1,0 +1,13 @@
+/* CSS for IBLBadges */
+
+.iblbadges_block .count {
+    font-weight: bold;
+}
+
+.iblbadges_block p {
+    cursor: pointer;
+}
+
+.printError {
+    color: #ae0a0a;
+}
