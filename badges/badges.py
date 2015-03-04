@@ -86,6 +86,7 @@ class Badges(XBlock):
 	self.claim_db_problems_total_score = self.claim_db_user_data[6]
 	self.claim_db_problems_partial_score = self.claim_db_user_data[7]
 	self.claim_db_problems_percent_score = self.claim_db_user_data[8]
+	self.claim_db_badge_problems_score = self.claim_db_user_data[9]
 
 	#need to be calc
 	self.user_score = self.claim_db_user_data[4] 
@@ -122,7 +123,11 @@ class Badges(XBlock):
 				if obj_sel_badge == '0':
 					self.claim_badge_errors = 'Could not retrieve the information associated with the Badge ID selected. Please, verify the ID.'
 				else:
-					self.claim_badge_form = achievery_api_client.get_badge_form(self,self.bg_id,self.claim_db_user_name,self.claim_db_user_email,self.form_text,obj_sel_badge)
+					if self.debug_mode == "1":
+						set_allow_dupe = "1"
+					else:
+						set_allow_dupe = "0"
+					self.claim_badge_form = achievery_api_client.get_badge_form(self,self.bg_id,self.claim_db_user_name,self.claim_db_user_email,self.form_text,obj_sel_badge,set_allow_dupe)
 			else:
 				self.claim_badge_errors = 'Could not retrieve the information associated with your account. Please, verify your credentials.'
 		else:
@@ -249,13 +254,14 @@ class Badges(XBlock):
 							
 					badge_partial_user_score = sum(partial_user_score)
 	#calculate total percent	
-	if int(badge_partial_user_score)>0 and int(badge_problems_score)>0:
+	if round(badge_partial_user_score,2)>0 and int(badge_problems_score)>0:
 		badge_percent_user_score = ( badge_partial_user_score * 100.0 ) / badge_problems_score
+		badge_percent_user_score = round(badge_percent_user_score,2)
 	if int(badge_percent_user_score)>0:
 		user_score = badge_percent_user_score
 
 	#show results
-	results = [user_id,course_id,user_name,user_email,user_score,badge_list_problems,badge_problems_score,badge_partial_user_score,badge_percent_user_score]
+	results = [user_id,course_id,user_name,user_email,user_score,badge_list_problems,badge_problems_score,badge_partial_user_score,badge_percent_user_score,badge_problems_score]
 	
         return results
 
@@ -300,9 +306,10 @@ class Badges(XBlock):
 		claimdata_dict= dict( entry.split('=') for entry in claimdata.split('&') )
 		award_data = achievery_api_client.set_form_data_to_award(self.claim_prov_name,claimdata_dict)
 		set_award_single = achievery_api_client.set_award_single_badge(self.claim_prov_name, self.claim_prov_url_claim,self.claim_prov_access_token,award_data)
-		#debug achievery : sils
-		debug_result = award_data +'<hr>'+set_award_single
-		return { 'result' : debug_result }
+		#debug achievery
+		if self.debug_mode == "1":
+			debug_result = award_data +'<hr>'+set_award_single
+			return { 'result' : debug_result }
 
 		#result award. we need to use eval to use the returned data as dict
 		if set_award_single is not '':

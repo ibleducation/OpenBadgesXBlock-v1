@@ -147,13 +147,13 @@ def build_evidences(data_evidences):
 		for evidence in data_evidences:
 			#get needed values
 			id 		= evidence.get("id", 0)
-			private 	= evidence.get("private", 'None')
+			#private 	= evidence.get("private", 'None') #removed in achievery 201502
 			description	= evidence.get("description", 'None')
 			type 		= evidence.get("type", 'None')
 			required	= evidence.get("required", 'N')
 			
 			#allowed evidences
-			if id>0 and private is None and (type =='url' or type == 'video' or type =='text' ) :
+			if id>0 and (type =='url' or type == 'video' or type =='text' ) :
 				#controls
 				if description is None:
 					description = 'Description'
@@ -176,7 +176,7 @@ def build_evidences(data_evidences):
 	return result
 
 
-def get_badge_form(self,f_bg_id,f_claim_name,f_claim_mail,f_form_text,obj_sel_badge):
+def get_badge_form(self,f_bg_id,f_claim_name,f_claim_mail,f_form_text,obj_sel_badge,set_allow_dupe):
 
 	#construct evidences
 	import achievery_api_client
@@ -206,10 +206,14 @@ def get_badge_form(self,f_bg_id,f_claim_name,f_claim_mail,f_form_text,obj_sel_ba
 	form += '<input type="hidden" name="first_name" value="%s">' % (f_claim_s_first_name)
 	form += '<input type="hidden" name="last_name" value="%s">' % (f_claim_s_last_name)
 	form += '<input type="hidden" name="email" value="%s">' % (f_claim_mail)
-	form += '<input type="hidden" name="allow_dupe" value="false">'
-
+	#control allow_dupe
+	if set_allow_dupe == "1":
+		form += '<input type="hidden" name="allow_dupe" value="true">'
+	else:
+		form += '<input type="hidden" name="allow_dupe" value="false">'
+		
 	form += "<table>"
-	form += "<tr><td><span style='color:#d9d9d9;'>%s</span></td></tr>" % (f_form_text)
+	form += "<tr><td><span style='color:#666666;'>%s</span></td></tr>" % (f_form_text)
 	form += "<tr><td>&#160;</td></tr>"
 	form += "%s" % (f_claim_evidences)
 	form += "<tr><td>&#160;</td></tr>"

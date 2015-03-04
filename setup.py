@@ -22,7 +22,7 @@ def package_data(pkg, roots):
 
 setup(
     name='badges-xblock',
-    version='0.3',
+    version='0.4',
     description='badges XBlock',   # TODO: write a better description.
     packages=[
         'badges',
