@@ -27,10 +27,10 @@ alt="IBL badges XBlock demo" width="240" height="180" border="10" /></a>
 
 ---
 
-_Note: Remember to setup the badge with the variable debug_mode set to 1,
+_Note: Remember to setup the badge with the variable `debug_mode` set to 1,
 this will activate the application debug mode. If debug mode is ON you'll be able to 
-award the same badge any time for the same user. Under production stage, remember
-to turn off the debug_mode variable._
+award the same badge many times for the same user. Under production mode, remember
+to turn off the `debug_mode` variable._
 
 ---
 
