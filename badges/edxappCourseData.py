@@ -84,7 +84,7 @@ def getCourseVerticals(dict_course,cname):
 
 #
 # Get Items : last level 
-# filter: problems and badges
+# filter: problems and iblopenbadges
 #
 def getCourseItems(dict_course,cname):
 	res_list = []
@@ -99,12 +99,12 @@ def getCourseItems(dict_course,cname):
 					for k in childs:
 						item_name = k.split('/')[::-1][0]
 						for item,val in enumerate(dict_course):
-							if val.get('_id')['name']==item_name and (val.get('_id')['category']=='problem' or val.get('_id')['category']=='badges'):
+							if val.get('_id')['name']==item_name and (val.get('_id')['category']=='problem' or val.get('_id')['category']=='iblopenbadges'):
 								category   = val.get('_id')['category']
 								revision   = val.get('_id')['revision']
 								metadata   = val.get('metadata')
 								definition = val.get('definition')
-								if category =='badges' and revision!='draft':
+								if category =='iblopenbadges' and revision!='draft':
 									if 'bg_id' in definition['data']:
 										badge_id  = val.get('definition')['data']['bg_id']
 									else:
@@ -149,7 +149,7 @@ def getDictCompleteCourseData(conn,course_id):
 		corg   = course[0]
 		ccourse= course[1]
 		cname  = course[2]
-		res_query = conn.find({'_id.org': ''+corg+'', '_id.course': ''+ccourse+'', '_id.category': { "$in": [ 'course','chapter', 'sequential', 'vertical', 'problem', 'badges' ] } }, {'definition.children':1, 'definition.data.bg_id':1, 'metadata.weight':1})
+		res_query = conn.find({'_id.org': ''+corg+'', '_id.course': ''+ccourse+'', '_id.category': { "$in": [ 'course','chapter', 'sequential', 'vertical', 'problem', 'iblopenbadges' ] } }, {'definition.children':1, 'definition.data.bg_id':1, 'metadata.weight':1})
 		if res_query:
 			for item in res_query:
 				dict_course.append(convertUnicode2Utf8Dict(item) )
@@ -234,11 +234,12 @@ connection = Connection()
 db_mongo = connection[xmoduledb]
 mongo_modulestore = db_mongo['modulestore']
 
-bg_id='2055'
-course_id='GW/MAE6286/2014_fall'
+bg_id='2008'
+course_id='IBL/1/2015_2'
 
 #badge_list_problems = getListProblemsFromBadgeId(mongo_modulestore,bg_id,course_id)
 #print badge_list_problems
+
 #badge_problems_score =getScoreFromBadgeId(mongo_modulestore,bg_id,course_id)
 #print badge_problems_score
 """
