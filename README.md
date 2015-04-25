@@ -5,7 +5,7 @@ This is the XBlock (an extension component for the Open edX course platform) to 
 
 The XBlock was developed by [IBL Studios](http://iblstudios.com/), with conceptual and feature design by [Lorena A. Barba](http://lorenabarba.com/) and Michael Amigot, and used in Prof. Barba's open online course ["Practical Numerical Methods with Python."](http://openedx.seas.gwu.edu/courses/GW/MAE6286/2014_fall/about) It went live in the course on December 2014.
 
-General consultancy on the principles for open digital badges in education was provided by [Prof. Daniel T. Hickey](http://remediatingassessment.blogspot.com/) and his team at Indiana University. The first badges were awarded using the service of the [Achievery](http://achievery.com/) platform, with a pre-release version of this XBlock. (The release version will interface to an open-source badge service). 
+General consultancy on the principles for open digital badges in education was provided by [Prof. Daniel T. Hickey](http://remediatingassessment.blogspot.com/) and his team at Indiana University. The first badges were awarded using the service of the [Achievery](http://achievery.com/) platform, with a pre-release version of this XBlock. 
 
 ## Summary of features
 
