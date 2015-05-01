@@ -55,5 +55,14 @@ December 10, 2015—U.S. News & World Report, ["Online Courses Experiment With D
 
 ###MOOC participants share their badges:
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/OsmanAksy">@OsmanAksy</a> NumericalMOOC 2: Space &amp; time badge <a href="https://twitter.com/hashtag/numericalmooc?src=hash">#numericalmooc</a>. <a href="https://t.co/2359lR576o">https://t.co/2359lR576o</a></p>&mdash; Osmnaksy (@OsmanAksy) <a href="https://twitter.com/OsmanAksy/status/542304013832974337">December 9, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Yay! <a href="https://twitter.com/hashtag/numericalmooc?src=hash">#numericalmooc</a> badge no.2: <a href="https://t.co/93YNVZJFsj">https://t.co/93YNVZJFsj</a> I&#39;m learning loads on this online course: <a href="http://t.co/8o29Z08UYs">http://t.co/8o29Z08UYs</a></p>&mdash; Clare Coughlan (@coughlanclare) <a href="https://twitter.com/coughlanclare/status/542625928212647936">December 10, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">And I&#39;m all caught up with the <a href="https://twitter.com/hashtag/numericalmooc?src=hash">#numericalmooc</a> coursework! <a href="http://t.co/js4QZn8Rat">pic.twitter.com/js4QZn8Rat</a></p>&mdash; Jonah Miller (@thephysicsmill) <a href="https://twitter.com/thephysicsmill/status/549700141062819840">December 29, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Getting caught up over the next few weekends. <a href="https://twitter.com/hashtag/numericalmooc?src=hash">#numericalmooc</a> <a href="https://t.co/C3oQtAL35l">https://t.co/C3oQtAL35l</a></p>&mdash; Kevin Kennedy (@HolyGeneralK) <a href="https://twitter.com/HolyGeneralK/status/551860657763934209">January 4, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
