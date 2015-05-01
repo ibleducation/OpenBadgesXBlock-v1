@@ -53,4 +53,7 @@ IBL Studios posted on their [blog](http://iblstudios.com/first-integration-of-op
 ###Media mention:
 December 10, 2015—U.S. News & World Report, ["Online Courses Experiment With Digital Badges"](http://www.usnews.com/education/online-education/articles/2014/12/10/online-courses-experiment-with-digital-badges)
 
+###MOOC participants share their badges:
 
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Yay! <a href="https://twitter.com/hashtag/numericalmooc?src=hash">#numericalmooc</a> badge no.2: <a href="https://t.co/93YNVZJFsj">https://t.co/93YNVZJFsj</a> I&#39;m learning loads on this online course: <a href="http://t.co/8o29Z08UYs">http://t.co/8o29Z08UYs</a></p>&mdash; Clare Coughlan (@coughlanclare) <a href="https://twitter.com/coughlanclare/status/542625928212647936">December 10, 2014</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
