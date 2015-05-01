@@ -35,7 +35,22 @@ award the same badge many times for the same user. Under production mode, rememb
 to turn off the `debug_mode` variable._
 
 ---
+#Timeline:
 
-###Presented at:
+###Public announcement of the project:
+September, 2014 — Blog post by James Willis and Daniel Hickey ["Collaboration with Lorena Barba's Python MOOC and Open edX"](http://remediatingassessment.blogspot.com/2014/09/collaboration-with-lorena-barbas-python.html), and blog post by Lorena A. Barba, ["A collaboration to issue badges in #numericalmooc"](http://lorenabarba.com/blog/a-collaboration-to-issue-badges-in-numericalmooc/)
+
+###Preview:
+Slide deck published on November 17, 2014, and [shared](https://twitter.com/lorenaabarba/status/534390502930796544) on Twitter — Barba, Lorena A.; Amigot, Michael (2014): Preview: Open edX extension to use digital badges in a MOOC. figshare. [http://dx.doi.org/10.6084/m9.figshare.1243674](http://dx.doi.org/10.6084/m9.figshare.1243674).
+
+
+###Prototype presented at:
 **Open edX Conference**, Cambridge, MA (November 2014)
 See the [slides of the presentation](http://dx.doi.org/10.6084/m9.figshare.1252211), released under CC-BY on the Figshare repository.
+
+IBL Studios posted on their [blog](http://iblstudios.com/first-integration-of-open-badges-on-open-edx-supported-by-edxs-ceo/) about the announcement, as did Prof. Hickey in his ["Re-mediating Assessment" blog](http://remediatingassessment.blogspot.com/2014/11/the-first-instance-of-issuing-open.html).
+
+###Media mention:
+December 10, 2015—U.S. News & World Report, ["Online Courses Experiment With Digital Badges"](http://www.usnews.com/education/online-education/articles/2014/12/10/online-courses-experiment-with-digital-badges)
+
+
