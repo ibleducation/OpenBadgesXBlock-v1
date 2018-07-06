@@ -3,7 +3,7 @@ IBL OpenBadges XBlock v1
 
 This is the XBlock (an extension component for the Open edX course platform) to allow awarding digital badges from an online course using Open edX. 
 
-####Warning: This XBlock implemented badge awarding using the Achievery service (via their API), which has been discontinued. The XBlock is thus no longer in working order.
+#### Warning: This XBlock implemented badge awarding using the Achievery service (via their API), which has been discontinued. The XBlock is thus no longer in working order.
 
 The Open Badges XBlock was developed by [IBL Studios](http://iblstudios.com/), with conceptual and feature design by [Lorena A. Barba](http://lorenabarba.com/) and Michael Amigot, and used in Prof. Barba's open online course ["Practical Numerical Methods with Python."](http://openedx.seas.gwu.edu/courses/GW/MAE6286/2014_fall/about) It went live in the course on December 2014.
 
@@ -18,7 +18,7 @@ General consultancy on the principles for open digital badges in education was p
 5. The user fills the claim form, entering URL fields for their learning evidence and others.
 6. Once awarded, the badge is privately available in the user's account on the badge service. The user then "claims" the badge to make it public. (This is the normal operation of open-badge services.)
 
-###See how it works:
+### See how it works:
 
 To see how the open-badges XBlock works, from the instructor's point of view, see this screencast:
 
@@ -35,25 +35,25 @@ award the same badge many times for the same user. Under production mode, rememb
 to turn off the `debug_mode` variable._
 
 ---
-#Timeline:
+# Timeline:
 
-###Public announcement of the project:
+### Public announcement of the project:
 September, 2014 — Blog post by James Willis and Daniel Hickey ["Collaboration with Lorena Barba's Python MOOC and Open edX"](http://remediatingassessment.blogspot.com/2014/09/collaboration-with-lorena-barbas-python.html), and blog post by Lorena A. Barba, ["A collaboration to issue badges in #numericalmooc"](http://lorenabarba.com/blog/a-collaboration-to-issue-badges-in-numericalmooc/)
 
-###Preview:
+### Preview:
 Slide deck published on November 17, 2014, and [shared](https://twitter.com/lorenaabarba/status/534390502930796544) on Twitter — Barba, Lorena A.; Amigot, Michael (2014): Preview: Open edX extension to use digital badges in a MOOC. figshare. [http://dx.doi.org/10.6084/m9.figshare.1243674](http://dx.doi.org/10.6084/m9.figshare.1243674).
 
 
-###Prototype presented at:
+### Prototype presented at:
 **Open edX Conference**, Cambridge, MA (November 2014)
 See the [slides of the presentation](http://dx.doi.org/10.6084/m9.figshare.1252211), released under CC-BY on the Figshare repository.
 
 IBL Studios posted on their [blog](http://iblstudios.com/first-integration-of-open-badges-on-open-edx-supported-by-edxs-ceo/) about the announcement, as did Prof. Hickey in his ["Re-mediating Assessment" blog](http://remediatingassessment.blogspot.com/2014/11/the-first-instance-of-issuing-open.html).
 
-###Media mention:
+### Media mention:
 December 10, 2015—U.S. News & World Report, ["Online Courses Experiment With Digital Badges"](http://www.usnews.com/education/online-education/articles/2014/12/10/online-courses-experiment-with-digital-badges)
 
-###MOOC participants share their badges:
+### MOOC participants share their badges:
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/OsmanAksy">@OsmanAksy</a> NumericalMOOC 2: Space &amp; time badge <a href="https://twitter.com/hashtag/numericalmooc?src=hash">#numericalmooc</a>. <a href="https://t.co/2359lR576o">https://t.co/2359lR576o</a></p>&mdash; Osmnaksy (@OsmanAksy) <a href="https://twitter.com/OsmanAksy/status/542304013832974337">December 9, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
